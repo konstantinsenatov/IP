@@ -1,0 +1,39 @@
+doctype html
+html(lang="ru")
+	head
+		meta(charset="utf-8")
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		title IP
+		meta(name="theme-color" content="#fff")
+		meta(name="apple-mobile-web-app-status-bar-style" content="black-translucent")
+		meta(name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
+		link(rel="stylesheet" href="styles/main.css")
+	body
+		.login
+			.login__container
+				.login__header 
+					.login__logo 
+						img(src="img/svg/logo.svg", alt="alt")
+						span корпоративный портал бюро
+				form.login__form.form-login(action='#' method='method')
+					.form-login__title авторизация на сайте
+					.form-login__group
+						label(for='email') логин
+						input.form-login__input(type='email', name='email' placeholder='' autofocus=true)
+					.form-login__group
+						label(for='password') пароль
+						input.form-login__input.form-login__input-password(type='password', name='{:password}' placeholder="")
+						i.form-login__eye 
+					button.form-login__btn(type='submit') войти
+					.form-login__text 
+						p 
+							|Пояснительный текст в помощь будет тут. 
+							br
+							span Зыбыли пароль? 
+							|Обратитесь в IT отдел.
+						p 
+							|В особенности же новая модель организационной деятельности обеспечивает актуальность системы обучения кадров, 
+							span насущным потребностям. 
+							|Прежде всего, укрепление и развитие внутренней структуры способствует подготовке и реализации прогресса профессионального сообщества.
+						p При нажатии на крестик портал загружается без авторизации, но с ограниченным функционалом. Чтобы воспользоваться функционалом будет перекидывать на эту страницу аторизации.
+		script(src="js/main.js")

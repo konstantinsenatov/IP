@@ -1,0 +1,40 @@
+block variables
+
+doctype html
+html(lang="ru")
+	head
+		meta(charset="utf-8")
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		title #{title}
+		meta(name="theme-color" content="#fff")
+		meta(name="apple-mobile-web-app-status-bar-style" content="black-translucent")
+		meta(name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
+		link(rel="stylesheet" href="styles/main.css")
+		link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/css/datepicker.min.css")
+		link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css")
+		link(rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css")
+
+	body
+		block content
+
+		div(style="display:none;")
+			#fancy-modal-map.fancy-modal-map
+				.map-container
+					#mapplic
+
+		script(src='https://code.jquery.com/jquery-3.6.0.min.js')
+		script(src='https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/js/datepicker.js')
+		script(src='https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js')
+		script(src='https://unpkg.com/swiper/swiper-bundle.min.js')
+		script(src='https://cdn.jsdelivr.net/npm/@easepick/bundle@1.2.0/dist/index.umd.min.js')
+
+
+		script(src='jslibs/jquery.mousewheel.js')
+		script(src='jslibs/magnific-popup.js')
+		script(src='jslibs/mapplic.js')
+		//import "./import/libs/csvparser.js"; - опционален для карты
+
+		script(src="js/main.js")
+
+		block scripts
+

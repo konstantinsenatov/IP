@@ -1,0 +1,41 @@
+extends ../layouts/default
+
+block variables
+	- const title = "IP";
+
+block content
+	.wrapper
+		include ../../blocks/modules/header/header
+
+		include ../../blocks/modules/sidebar-icons/sidebar-icons
+		.page
+			include ../../blocks/modules/menu/menu
+			.content
+				.content__container
+					.offices.offices-maps
+						.offices__title.general-title Офисы бюро
+						.offices__btns
+							a(href="").offices__btn.offices__btn-map.active 
+								span карта офиса Москва
+								.offices__btn--arrow
+							a(href="").offices__btn.offices__btn-map 
+								span карта офиса Санкт-Петербург
+								.offices__btn--arrow
+							a(href="").offices__btn.offices__btn-calendar 
+								span календарь бронирований
+
+						.offices-map-wrap
+							.map-container
+								#mapplic
+
+						//.offices-maps__img.js-interactive-map-wrap
+							//img(src="img/svg/map.jpg", alt="alt")
+
+
+
+
+
+
+
+
+		include ../../blocks/modules/footer/footer

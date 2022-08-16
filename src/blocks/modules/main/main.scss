@@ -1,0 +1,75 @@
+.main {
+	padding-top: 212px;
+	padding-bottom: 102px;
+	margin-right: calc(21vw + 126px);
+	margin-left: 30px;
+	&__container {
+		font-family: 'Styrene A LC Web';
+		font-style: normal;
+	} 
+		&__title {
+			text-align: left;
+			font-weight: 400;
+			font-size: 24px;
+			line-height: 31px;
+			color: #000000;
+			margin: 0;
+			margin-bottom: 50px;
+		}
+		&__subtitle {
+			font-weight: 700;
+			font-size: 16px;
+			line-height: 20px;
+			display: flex;
+			align-items: center;
+			color: #F04E00;
+			border-bottom: 2px solid #F04E00;
+			padding-bottom: 14px;
+			margin-top: 40px;
+		
+			&:nth-child(2) {
+				margin-top: 50px;
+		
+			}
+		}
+		&__link {
+			margin-top: 15px;
+			display: block;
+		}
+		&__text {
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 24px;
+			color: #000000;
+			margin-top: 15px;
+		}
+		&__news {
+
+		} 
+		&__massages {
+			margin-top: 93px;
+		}
+		&__date {
+			margin-top: 48px;
+			border-bottom: 2px solid #FFFFFF;
+			padding-bottom: 14px;
+		
+			span {
+				font-size: 16px;
+				line-height: 20px;
+				display: inline-flex;
+				align-items: center;
+				color: #000000;
+		
+				&:nth-child(1) {
+					font-weight: 700;
+				}
+		
+				&:nth-child(2) {
+					margin-left: 14px;
+					font-weight: 400;
+		
+				}
+			}
+		}
+}

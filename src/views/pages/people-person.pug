@@ -1,0 +1,70 @@
+extends ../layouts/default
+
+block variables
+	- const title = "IP";
+
+block content
+	.wrapper
+		include ../../blocks/modules/header/header
+
+		include ../../blocks/modules/sidebar-icons/sidebar-icons
+		.page
+			include ../../blocks/modules/menu/menu
+			.content
+				.content__container
+					.people(style='display:flex; flex-direction:column;height:100%;')
+						.people__title.general-title Сотрудники бюро
+						.people__header(style='padding-bottom: 40px')
+							.people__header--search.search
+								.people__header--icon.search--icon
+									img(src="img/svg/search-orange.svg", alt="alt")
+								.people__header--input.search--input
+									input(type="text" placeholder='Найти сотрудника')
+
+							.people__header--btns
+								a(href="people-lists.html").people__header--btn.people__header--btn1
+									svg(width='26' height='24' viewBox='0 0 26 24' fill='none' xmlns='http://www.w3.org/2000/svg')
+										path(d='M0 1H26M0 12H26M0 23H26' stroke='#CFEDFF' stroke-width='2')
+								a(href="people-cards.html").people__header--btn.people__header--btn2.active
+									svg(width='26' height='26' viewBox='0 0 26 26' fill='none' xmlns='http://www.w3.org/2000/svg')
+										path(d='M1 1H10V10H1V1ZM1 16H10V25H1V16ZM16 1H25V10H16V1ZM16 16H25V25H16V16Z' stroke='#CFEDFF' stroke-width='2')
+
+						.people__person.person
+							.person__container
+								.person__row
+									.person__img
+										img(src="img/man-big.jpg", alt="alt")
+									.person__body
+										.person__name Юлия Чекмарева
+										.person__position советник, руководитель практики Private Clients
+										.person__city Москва
+										.person__contacts
+											.person__contacts--left
+												.person__contacts--item
+													.person__contacts--icon
+														img(src="img/svg/people-person/1.svg", alt="alt")
+													a(href="") 
+														span 1265 (office)
+												.person__contacts--item
+													.person__contacts--icon
+														img(src="img/svg/people-person/2.svg", alt="alt")
+													a(href="") 
+														span +7 495 647 0046 (work)
+												.person__contacts--item
+													.person__contacts--icon
+														img(src="img/svg/people-person/2.svg", alt="alt")
+													a(href="") 
+														span +7 495 647 0046 (personal)
+												.person__contacts--item
+													.person__contacts--icon
+														img(src="img/svg/people-person/3.svg", alt="alt")
+													a(href="") 
+														span y.chekmareva@iplf.ru
+											.person__contacts--right
+												span Кабинет
+												a(href="#fancy-modal-map" data-fancy-map) 
+													span 208
+
+
+
+		include ../../blocks/modules/footer/footer

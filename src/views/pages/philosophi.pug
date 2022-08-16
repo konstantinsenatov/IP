@@ -1,0 +1,19 @@
+extends ../layouts/default
+
+block variables
+	- const title = "IP";
+
+block content
+	.wrapper
+		include ../../blocks/modules/header/header
+
+		include ../../blocks/modules/sidebar-icons/sidebar-icons
+		.page
+			include ../../blocks/modules/menu/menu
+			.content
+				.content__container
+					.philosophi-block
+						include ../../blocks/modules/block-text/block-text
+
+
+		include ../../blocks/modules/footer/footer

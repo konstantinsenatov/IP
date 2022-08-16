@@ -1,0 +1,17 @@
+extends layouts/default
+include helpers/mixins
+
+block variables
+	- const title = "IP"
+
+block content
+	.wrapper
+		include ../blocks/modules/header/header
+
+		include ../blocks/modules/sidebar/sidebar
+		.page
+			include ../blocks/modules/menu/menu
+			include ../blocks/modules/main/main
+
+		include ../blocks/modules/footer/footer
+

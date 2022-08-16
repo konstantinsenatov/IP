@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>IP</title>
+    <meta name="theme-color" content="#fff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/css/datepicker.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header"> 
+        <div class="header__container"> 
+          <div class="header__search"> 
+            <div class="header__search--icon"> <img src="img/svg/search.svg" alt="alt"></div>
+            <div class="header__search--input"> 
+              <input type="text" placeholder="Поиск по сайту">
+            </div>
+          </div>
+          <button class="header__man"> <span>NameS</span><img src="img/svg/man.svg" alt="alt"></button>
+          <div class="header__login login-header"> 
+            <ul class="login-header__list"> 
+              <li class="login-header__item"> <a class="login-header__link" href="">изменить аватарку</a></li>
+              <li class="login-header__item"> <a class="login-header__link" href="">сменить пользователя</a></li>
+              <li class="login-header__item"> <a class="login-header__link" href="">выйти</a></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="sidebar-icons">
+        <div class="sidebar-icons__container"> <a class="sidebar-icons__link calendar-icon" href="offices-calendar.html">
+            <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M17 9H1M17 9V17C17 18.1046 16.1046 19 15 19H3C1.89543 19 1 18.1046 1 17V5C1 3.89543 1.89543 3 3 3H15C16.1046 3 17 3.89543 17 5V9ZM12 1V5M6 1V5" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg></a><a class="sidebar-icons__link call-icon" href="people-cards.html">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15.4995 11.7306L14.9995 11.7181V11.7306H15.4995ZM15.4995 13.9887H14.9995L14.9995 13.9907L15.4995 13.9887ZM2.00676 0.500073V7.27475e-05L2.00629 7.31945e-05L2.00676 0.500073ZM4.26937 0.500073V1.0001L4.27429 1.00005L4.26937 0.500073ZM5.26776 0.864034L4.94211 1.24345V1.24345L5.26776 0.864034ZM5.0085 6.45403L4.65529 6.10013C4.49574 6.25937 4.46247 6.50569 4.57406 6.70155L5.0085 6.45403ZM9.53373 10.9703L9.28695 11.4052C9.48241 11.5161 9.72786 11.483 9.88693 11.3242L9.53373 10.9703ZM15.1424 10.72L15.5236 10.3964L15.1424 10.72ZM6.36901 4.75357L6.85797 4.85805L6.36901 4.75357ZM11.2376 9.61249L11.3417 10.1015L11.2376 9.61249ZM13.8553 15.4941L13.9002 14.9961C13.8852 14.9948 13.8701 14.9941 13.8549 14.9941L13.8553 15.4941ZM0.505887 2.14099L1.00589 2.14138C1.0059 2.1262 1.00522 2.11102 1.00385 2.0959L0.505887 2.14099ZM10.179 2.92592C9.908 2.87304 9.64542 3.04989 9.59254 3.32092C9.53966 3.59195 9.7165 3.85453 9.98754 3.90741L10.179 2.92592ZM12.0925 6.01241C12.1454 6.28345 12.408 6.46029 12.679 6.40741C12.9501 6.35453 13.1269 6.09195 13.074 5.82092L12.0925 6.01241ZM10.5552 0.00305709C10.2807 -0.0274326 10.0335 0.17034 10.003 0.444794C9.97252 0.719248 10.1703 0.966453 10.4447 0.996943L10.5552 0.00305709ZM13.8333 2.16667L14.1866 1.81289L13.8333 2.16667ZM15.0031 5.55583C15.0339 5.83025 15.2814 6.02771 15.5558 5.99687C15.8302 5.96604 16.0277 5.71858 15.9968 5.44417L15.0031 5.55583ZM14.9995 11.7306V13.9887H15.9995V11.7306H14.9995ZM2.00676 1.00007H4.26937V7.29859e-05H2.00676V1.00007ZM4.27429 1.00005C4.51926 0.997643 4.75661 1.08423 4.94211 1.24345L5.59341 0.484623C5.22386 0.167439 4.75153 -0.00468713 4.26446 9.7096e-05L4.27429 1.00005ZM4.57406 6.70155C5.69231 8.66429 7.32057 10.2893 9.28695 11.4052L9.78051 10.5355C7.97051 9.5083 6.47199 8.01269 5.44293 6.20652L4.57406 6.70155ZM14.7612 11.0436C14.921 11.2318 15.0058 11.4719 14.9997 11.7181L15.9993 11.743C16.0116 11.2509 15.8422 10.7717 15.5236 10.3964L14.7612 11.0436ZM4.94211 1.24345C5.06329 1.34745 5.20662 1.5469 5.34911 1.84476C5.48774 2.13451 5.60908 2.48243 5.70358 2.8459C5.89878 3.59677 5.95295 4.30793 5.88005 4.64908L6.85797 4.85805C6.98033 4.28544 6.87839 3.39045 6.67141 2.59429C6.5648 2.18425 6.42354 1.77344 6.2512 1.41319C6.08273 1.06105 5.86674 0.719221 5.59341 0.484623L4.94211 1.24345ZM11.3417 10.1015C11.6847 10.0285 12.4007 10.083 13.1552 10.2791C13.5205 10.374 13.8699 10.4959 14.1605 10.6352C14.4593 10.7785 14.6583 10.9224 14.7612 11.0436L15.5236 10.3964C15.2892 10.1204 14.9461 9.90287 14.5928 9.73349C14.2313 9.56016 13.8186 9.41825 13.4067 9.31121C12.6066 9.10332 11.7074 9.00129 11.1335 9.12345L11.3417 10.1015ZM9.88693 11.3242C10.0192 11.1922 10.1521 11.0447 10.2742 10.9116C10.4005 10.7739 10.5205 10.6456 10.6437 10.5295C10.8943 10.2935 11.1168 10.1494 11.3417 10.1015L11.1335 9.12345C10.6435 9.22774 10.2585 9.51858 9.95815 9.80148C9.80592 9.94484 9.66453 10.0969 9.53719 10.2358C9.40563 10.3792 9.29273 10.5044 9.18053 10.6164L9.88693 11.3242ZM5.88005 4.64908C5.83224 4.87281 5.68816 5.09464 5.45161 5.34483C5.3353 5.46785 5.20667 5.5876 5.0687 5.71362C4.93533 5.83544 4.78755 5.96814 4.65529 6.10013L5.3617 6.80794C5.4739 6.69595 5.59937 6.58327 5.74311 6.45198C5.88225 6.32489 6.0346 6.18378 6.17825 6.03185C6.46162 5.73215 6.75333 5.34772 6.85797 4.85805L5.88005 4.64908ZM13.8549 14.9941C6.61081 14.9998 1.00022 9.33785 1.00589 2.14138L0.00588745 2.14059C-0.000216544 9.88713 6.05586 16.0002 13.8557 15.9941L13.8549 14.9941ZM14.9995 13.9907C15.0018 14.5604 14.4771 15.0482 13.9002 14.9961L13.8104 15.9921C14.9766 16.0973 16.0042 15.1434 15.9995 13.9867L14.9995 13.9907ZM1.00385 2.0959C0.952145 1.52486 1.43558 1.00061 2.00723 1.00007L2.00629 7.31945e-05C0.853711 0.00115645 -0.0973532 1.02338 0.00792444 2.18608L1.00385 2.0959ZM9.98754 3.90741C10.5313 4.01351 11.0415 4.24866 11.3964 4.60355L12.1035 3.89645C11.5733 3.36621 10.8638 3.05953 10.179 2.92592L9.98754 3.90741ZM11.3964 4.60355C11.7513 4.95845 11.9864 5.46863 12.0925 6.01241L13.074 5.82092C12.9404 5.1361 12.6337 4.42668 12.1035 3.89645L11.3964 4.60355ZM10.4447 0.996943C11.5923 1.12442 12.6394 1.68097 13.48 2.52044L14.1866 1.81289C13.21 0.837482 11.9602 0.159146 10.5552 0.00305709L10.4447 0.996943ZM13.48 2.52044C14.3195 3.35893 14.874 4.40726 15.0031 5.55583L15.9968 5.44417C15.8391 4.04055 15.1642 2.78929 14.1866 1.81289L13.48 2.52044Z" fill="#000000"></path>
+            </svg></a><a class="sidebar-icons__link mans-icon" href="">
+            <svg width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 15H0.5C0.5 15.2761 0.723858 15.5 1 15.5V15ZM3 15.5C3.27614 15.5 3.5 15.2761 3.5 15C3.5 14.7238 3.27614 14.5 3 14.5V15.5ZM4.12463 10.6102C4.39206 10.5414 4.55305 10.2688 4.48422 10.0014C4.41539 9.73395 4.1428 9.57296 3.87537 9.64179L4.12463 10.6102ZM5.83338 7.30072C6.09374 7.39275 6.3794 7.25628 6.47142 6.99593C6.56344 6.73557 6.42698 6.44991 6.16662 6.35788L5.83338 7.30072ZM6.16662 1.64214C6.42698 1.55011 6.56344 1.26445 6.47142 1.00409C6.3794 0.743734 6.09374 0.607272 5.83338 0.699295L6.16662 1.64214ZM23 15V15.5C23.2761 15.5 23.5 15.2761 23.5 15H23ZM21 14.5C20.7239 14.5 20.5 14.7238 20.5 15C20.5 15.2761 20.7239 15.5 21 15.5V14.5ZM20.1246 9.64179C19.8572 9.57296 19.5846 9.73395 19.5158 10.0014C19.447 10.2688 19.6079 10.5414 19.8754 10.6102L20.1246 9.64179ZM18.1666 0.699295C17.9063 0.607272 17.6206 0.743734 17.5286 1.00409C17.4366 1.26445 17.573 1.55011 17.8334 1.64214L18.1666 0.699295ZM17.8334 6.35788C17.573 6.44991 17.4366 6.73557 17.5286 6.99593C17.6206 7.25628 17.9063 7.39275 18.1666 7.30072L17.8334 6.35788ZM18 15V15.5C18.2761 15.5 18.5 15.2761 18.5 15H18ZM6 15H5.5C5.5 15.2761 5.72386 15.5 6 15.5V15ZM0.5 14V15H1.5V14H0.5ZM1 15.5H3V14.5H1V15.5ZM1.5 14C1.5 12.3698 2.61495 10.9988 4.12463 10.6102L3.87537 9.64179C1.9346 10.1413 0.5 11.9025 0.5 14H1.5ZM3.5 4.00001C3.5 5.52471 4.47466 6.82049 5.83338 7.30072L6.16662 6.35788C5.19495 6.01445 4.5 5.08774 4.5 4.00001H3.5ZM5.83338 0.699295C4.47466 1.17953 3.5 2.47531 3.5 4.00001H4.5C4.5 2.91227 5.19495 1.98557 6.16662 1.64214L5.83338 0.699295ZM22.5 14V15H23.5V14H22.5ZM23 14.5H21V15.5H23V14.5ZM23.5 14C23.5 11.9025 22.0654 10.1413 20.1246 9.64179L19.8754 10.6102C21.3851 10.9988 22.5 12.3698 22.5 14H23.5ZM17.8334 1.64214C18.805 1.98557 19.5 2.91227 19.5 4.00001H20.5C20.5 2.47531 19.5253 1.17953 18.1666 0.699295L17.8334 1.64214ZM19.5 4.00001C19.5 5.08774 18.805 6.01445 17.8334 6.35788L18.1666 7.30072C19.5253 6.82049 20.5 5.52471 20.5 4.00001H19.5ZM10 10.5H14V9.5H10V10.5ZM17.5 14V15H18.5V14H17.5ZM6.5 15V14H5.5V15H6.5ZM14 10.5C15.933 10.5 17.5 12.067 17.5 14H18.5C18.5 11.5147 16.4853 9.5 14 9.5V10.5ZM10 9.5C7.51472 9.5 5.5 11.5147 5.5 14H6.5C6.5 12.067 8.067 10.5 10 10.5V9.5ZM18 14.5H6V15.5H18V14.5ZM14.5 4C14.5 5.38071 13.3807 6.5 12 6.5V7.5C13.933 7.5 15.5 5.933 15.5 4H14.5ZM12 6.5C10.6193 6.5 9.5 5.38071 9.5 4H8.5C8.5 5.933 10.067 7.5 12 7.5V6.5ZM9.5 4C9.5 2.61929 10.6193 1.5 12 1.5V0.5C10.067 0.5 8.5 2.067 8.5 4H9.5ZM12 1.5C13.3807 1.5 14.5 2.61929 14.5 4H15.5C15.5 2.067 13.933 0.5 12 0.5V1.5Z" fill="#000000"></path>
+            </svg></a><a class="sidebar-icons__link massage-icon" href="autoreply.html">
+            <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 13H16.1111C16.602 13 17 12.6162 17 12.1429V1.85714C17 1.62045 16.9005 1.40616 16.7397 1.25105M16.7397 1.25105C16.5788 1.09594 16.3566 1 16.1111 1H1.88889C1.64343 1 1.4212 1.09594 1.26035 1.25105M16.7397 1.25105L10.2571 7.50206C9.56281 8.17153 8.43719 8.17153 7.74292 7.50206L1.26035 1.25105M1.26035 1.25105C1.09949 1.40616 1 1.62045 1 1.85714V7M9.5 14.5V13.25V13.25C9.5 11.7312 8.26878 10.5 6.75 10.5H1.5M1.5 10.5L3.5 12.5M1.5 10.5L3.5 8.5" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg></a><a class="sidebar-icons__link signature-icon" href="signature.html">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13.2353 1L13.5888 0.646447C13.3936 0.451184 13.077 0.451184 12.8817 0.646447L13.2353 1ZM17 4.76471L17.3536 5.11826C17.5488 4.923 17.5488 4.60641 17.3536 4.41115L17 4.76471ZM8.52941 13.2353V13.7353C8.66202 13.7353 8.7892 13.6826 8.88297 13.5888L8.52941 13.2353ZM4.76471 13.2353H4.26471C4.26471 13.5114 4.48856 13.7353 4.76471 13.7353V13.2353ZM4.76471 9.47059L4.41115 9.11703C4.31738 9.2108 4.26471 9.33798 4.26471 9.47059H4.76471ZM16.0588 17V17.5C16.1914 17.5 16.3186 17.4473 16.4124 17.3536C16.5061 17.2598 16.5588 17.1326 16.5588 17H16.0588ZM1 17H0.5C0.5 17.2761 0.723858 17.5 1 17.5L1 17ZM1 1.94118L1 1.44118C0.723859 1.44118 0.500001 1.66503 0.500001 1.94118H1ZM6.64706 2.44118C6.9232 2.44118 7.14706 2.21732 7.14706 1.94118C7.14706 1.66503 6.9232 1.44118 6.64706 1.44118L6.64706 2.44118ZM16.5588 11.3529C16.5588 11.0768 16.335 10.8529 16.0588 10.8529C15.7827 10.8529 15.5588 11.0768 15.5588 11.3529H16.5588ZM12.8817 1.35355L16.6464 5.11826L17.3536 4.41115L13.5888 0.646447L12.8817 1.35355ZM8.52941 12.7353H4.76471V13.7353H8.52941V12.7353ZM5.26471 13.2353V9.47059H4.26471V13.2353H5.26471ZM5.11826 9.82414L10.7653 4.17708L10.0582 3.46998L4.41115 9.11703L5.11826 9.82414ZM10.7653 4.17708L13.5888 1.35355L12.8817 0.646447L10.0582 3.46998L10.7653 4.17708ZM16.6464 4.41115L13.8229 7.23468L14.53 7.94179L17.3536 5.11826L16.6464 4.41115ZM13.8229 7.23468L8.17586 12.8817L8.88297 13.5888L14.53 7.94179L13.8229 7.23468ZM14.53 7.23468L10.7653 3.46998L10.0582 4.17708L13.8229 7.94179L14.53 7.23468ZM16.0588 16.5L1 16.5L1 17.5L16.0588 17.5V16.5ZM1.5 17L1.5 1.94118L0.500001 1.94118L0.5 17H1.5ZM1 2.44118L6.64706 2.44118L6.64706 1.44118L1 1.44118L1 2.44118ZM15.5588 11.3529V17H16.5588V11.3529H15.5588Z" fill="#000000"></path>
+            </svg></a><a class="sidebar-icons__link location-icon" href="">
+            <svg width="15" height="21" viewBox="0 0 15 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7.5 16.7561C10.4573 13.9281 14 11.034 14 7.46404C14 3.89405 11.0899 1 7.5 1C3.91015 1 1 3.89405 1 7.46404C1 11.034 4.76984 13.9281 7.5 16.7561Z" fill="white"></path>
+              <path d="M7.5 8.64559C8.52567 8.64559 9.35714 7.76397 9.35714 6.67645C9.35714 5.58893 8.52567 4.70732 7.5 4.70732C6.47433 4.70732 5.64286 5.58893 5.64286 6.67645C5.64286 7.76397 6.47433 8.64559 7.5 8.64559Z" fill="white"></path>
+              <path d="M7.5 16.7561L7.14028 17.1034C7.33143 17.3014 7.64666 17.3077 7.84556 17.1175L7.5 16.7561ZM2.39286 19.5C2.11671 19.5 1.89286 19.7239 1.89286 20C1.89286 20.2761 2.11671 20.5 2.39286 20.5V19.5ZM12.6071 20.5C12.8833 20.5 13.1071 20.2761 13.1071 20C13.1071 19.7239 12.8833 19.5 12.6071 19.5V20.5ZM5.64286 10.6147L5.64284 11.1147H5.64286V10.6147ZM9.35714 10.6147V11.1147H9.35716L9.35714 10.6147ZM10.7143 13.0488C10.7143 13.3249 10.9381 13.5488 11.2143 13.5488C11.4904 13.5488 11.7143 13.3249 11.7143 13.0488H10.7143ZM3.28571 13.0488C3.28571 13.3249 3.50957 13.5488 3.78571 13.5488C4.06186 13.5488 4.28571 13.3249 4.28571 13.0488H3.28571ZM13.5 7.46404C13.5 9.07797 12.6996 10.5821 11.4731 12.0703C10.2428 13.5633 8.65551 14.9593 7.15444 16.3947L7.84556 17.1175C9.30183 15.7249 10.9645 14.2599 12.2449 12.7063C13.5291 11.148 14.5 9.4201 14.5 7.46404H13.5ZM7.85972 16.4088C6.45005 14.9486 4.88211 13.5773 3.60853 12.0661C2.34827 10.5707 1.5 9.06945 1.5 7.46404H0.5C0.5 9.42862 1.53665 11.1594 2.84386 12.7105C4.13773 14.2458 5.81979 15.7356 7.14028 17.1034L7.85972 16.4088ZM1.5 7.46404C1.5 4.1728 4.18367 1.5 7.5 1.5V0.5C3.63663 0.5 0.5 3.6153 0.5 7.46404H1.5ZM7.5 1.5C10.8163 1.5 13.5 4.1728 13.5 7.46404H14.5C14.5 3.6153 11.3634 0.5 7.5 0.5V1.5ZM2.39286 20.5H12.6071V19.5H2.39286V20.5ZM8.85714 6.67645C8.85714 7.51582 8.22235 8.14559 7.5 8.14559V9.14559C8.82899 9.14559 9.85714 8.01213 9.85714 6.67645H8.85714ZM7.5 8.14559C6.77765 8.14559 6.14286 7.51582 6.14286 6.67645H5.14286C5.14286 8.01213 6.17101 9.14559 7.5 9.14559V8.14559ZM6.14286 6.67645C6.14286 5.83708 6.77765 5.20732 7.5 5.20732V4.20732C6.17101 4.20732 5.14286 5.34077 5.14286 6.67645H6.14286ZM7.5 5.20732C8.22235 5.20732 8.85714 5.83708 8.85714 6.67645H9.85714C9.85714 5.34077 8.82899 4.20732 7.5 4.20732V5.20732ZM5.64286 11.1147H9.35714V10.1147H5.64286V11.1147ZM9.35716 11.1147C9.70078 11.1147 10.0296 11.3207 10.2964 11.7138C10.5633 12.1071 10.7143 12.6179 10.7143 13.0488H11.7143C11.7143 12.4165 11.5026 11.7103 11.1238 11.1523C10.745 10.5941 10.1453 10.1147 9.35713 10.1147L9.35716 11.1147ZM4.28571 13.0488C4.28571 12.6179 4.43668 12.1071 4.70357 11.7138C4.97037 11.3207 5.29922 11.1147 5.64284 11.1147L5.64287 10.1147C4.8547 10.1147 4.25498 10.5941 3.87615 11.1523C3.49743 11.7103 3.28571 12.4165 3.28571 13.0488H4.28571Z" fill="#000000"></path>
+            </svg></a></div>
+      </div>
+      <div class="page">
+        <div class="menu">
+          <div class="menu__wrapper">
+            <div class="menu__container"> <a class="menu__logo" href=""> <img src="img/svg/logo.svg" alt="alt"><span>корпоративный портал бюро</span></a>
+              <ul class="menu__list"> 
+                <li class="menu__item"> 
+                  <div class="menu__item--click bureau-item">Бюро</div>
+                  <ul class="submenu__list"> 
+                    <li class="submenu__item"><a class="submenu__link philosophi-link" href="philosophi.html">философия</a></li>
+                    <li class="submenu__item"><a class="submenu__link" href="#">история</a></li>
+                    <li class="submenu__item"><a class="submenu__link" href="#">орг. структура</a></li>
+                    <li class="submenu__item"><a class="submenu__link offices-link" href="offices.html">офисы</a></li>
+                  </ul>
+                </li>
+                <li class="menu__item"> <a class="menu__item--click people-link" href="people-cards.html">Люди</a></li>
+                <li class="menu__item"> <a class="menu__item--click docs-link" href="docs.html">Документы</a></li>
+                <li class="menu__item"> 
+                  <div class="menu__item--click">биллинг</div>
+                  <ul class="submenu__list"> 
+                    <li class="submenu__item"><a class="submenu__link" href="#">философия</a></li>
+                    <li class="submenu__item"><a class="submenu__link" href="#">история</a></li>
+                    <li class="submenu__item"><a class="submenu__link" href="#">орг. структура</a></li>
+                    <li class="submenu__item"><a class="submenu__link" href="#">офисы</a></li>
+                  </ul>
+                </li>
+                <li class="menu__item"> 
+                  <div class="menu__item--click">финансы</div>
+                  <ul class="submenu__list"> 
+                    <li class="submenu__item"><a class="submenu__link" href="#">философия</a></li>
+                    <li class="submenu__item"><a class="submenu__link" href="#">история</a></li>
+                    <li class="submenu__item"><a class="submenu__link" href="#">орг. структура</a></li>
+                    <li class="submenu__item"><a class="submenu__link" href="#">офисы</a></li>
+                  </ul>
+                </li>
+                <li class="menu__item"> 
+                  <div class="menu__item--click">Маркетинг</div>
+                  <ul class="submenu__list"> 
+                    <li class="submenu__item"><a class="submenu__link" href="#">позиционирование</a></li>
+                    <li class="submenu__item"><a class="submenu__link" href="#">шаблоны</a></li>
+                    <li class="submenu__item"><a class="submenu__link" href="#">брендбук</a></li>
+                    <li class="submenu__item"><a class="submenu__link" href="#">актуальные опросы</a></li>
+                    <li class="submenu__item"><a class="submenu__link" href="#">результаты опросов</a></li>
+                  </ul>
+                </li>
+                <li class="menu__item"> 
+                  <div class="menu__item--click menu__item--click-uppercase">HR</div>
+                  <ul class="submenu__list"> 
+                    <li class="submenu__item"><a class="submenu__link" href="#">дмс</a></li>
+                    <li class="submenu__item"><a class="submenu__link" href="#">дресс-код</a></li>
+                    <li class="submenu__item"><a class="submenu__link" href="#">корпоративная связь</a></li>
+                    <li class="submenu__item"><a class="submenu__link" href="#">адвокатский статус</a></li>
+                    <li class="submenu__item"><a class="submenu__link" href="#">больничный</a></li>
+                    <li class="submenu__item"><a class="submenu__link" href="#">командировки</a></li>
+                    <li class="submenu__item"><a class="submenu__link" href="#">увольнение</a></li>
+                    <li class="submenu__item"><a class="submenu__link" href="#">справочник нового сотрудника</a></li>
+                  </ul>
+                </li>
+                <li class="menu__item"> 
+                  <div class="menu__item--click menu__item--click-uppercase">IT</div>
+                  <ul class="submenu__list"> 
+                    <li class="submenu__item"><a class="submenu__link" href="#">FAQ</a></li>
+                    <li class="submenu__item"><a class="submenu__link" href="#">полезные советы</a></li>
+                    <li class="submenu__item"><a class="submenu__link" href="#">WI-Fi</a></li>
+                    <li class="submenu__item"><a class="submenu__link" href="#">Maconomy</a></li>
+                    <li class="submenu__item"><a class="submenu__link" href="#">офисные телефоны</a></li>
+                    <li class="submenu__item"><a class="submenu__link" href="#">почта Outlook</a></li>
+                    <li class="submenu__item"><a class="submenu__link" href="#">Word</a></li>
+                    <li class="submenu__item"><a class="submenu__link" href="#">Excel</a></li>
+                    <li class="submenu__item"><a class="submenu__link" href="#">Acrobat Pro</a></li>
+                    <li class="submenu__item"><a class="submenu__link" href="#">Rocket Chat</a></li>
+                    <li class="submenu__item"><a class="submenu__link" href="#">Видеоконференции</a></li>
+                    <li class="submenu__item"><a class="submenu__link" href="#">Brya Mobile</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="content">
+          <div class="content__container">
+            <div class="autoreply"> 
+              <div class="autoreply__container">
+                <div class="autoreply__title general-title">Автоответ на время отпуска</div>
+                <p class="autoreply__text">Короткая инструкция будет тут. Писмо формируется автоматичевки: текст письма стандартный, данный сотрудника подтягиваются из базы данных (имя фамилия, телефон, email и тд) Изначально текст будет серым (50% black), без возможности править. Возможность внести корректировки появляется уже после создания подписи. При выборе пунка он становиться черным (100% black). После того, как все пункты были выбраны кнопка создать становится активной. После нажатия кнопки создать  становиться активной кнопка скопировать (при этом кнопка создать становиться неактивной (30% black), а также текст письма становится доступным к редактированию (100% black). В сформированное письмо можно добавить еще один номер телефона, например, или еще какие данные.<br>Ссылка на подробную инструкцию со скринами (в раздел IT??)</p>
+                <div class="autoreply__body"> 
+                  <div class="autoreply__left"> 
+                    <div class="autoreply__item autoreply__item-calendar"> 
+                      <div class="autoreply__item--title">даты</div>
+                      <div class="autoreply__item-calendar-row autoreply__item--row autoreply__item--row-arrow">
+                        <input class="js-datepicker" id="datepicker" type="text" placeholder="Выберите даты"><img src="img/svg/autoreply/arrow.svg" alt="alt">
+                      </div>
+                    </div>
+                    <div class="autoreply__item"> 
+                      <div class="autoreply__item--title">заместитель</div>
+                      <label class="autoreply__item--row autoreply__item--row-search">
+                        <input type="text" placeholder="Начните набирать имя"><img src="img/svg/autoreply/search.svg" alt="alt">
+                      </label>
+                    </div>
+                    <div class="autoreply__item"> 
+                      <div class="autoreply__item--title">язык</div>
+                      <div class="autoreply__item--inner" data-state=""><img src="img/svg/autoreply/arrow.svg" alt="alt">
+                        <div class="autoreply__item--row-lang autoreply__item--row autoreply__item--row-arrow" data-default="active"> <span>русский</span></div>
+                        <div class="autoreply__item--content">
+                          <input class="autoreply__item--input" id="autoreplySelect1" type="radio" name="autoreplySelect">
+                          <label class="autoreply__item--label1" for="autoreplySelect1"></label>
+                          <input class="autoreply__item--input" id="autoreplySelect2" type="radio" name="autoreplySelect" checked="">
+                          <label class="autoreply__item--label autoreply__item--label-rus" for="autoreplySelect2"> <span>русский</span></label>
+                          <input class="autoreply__item--input" id="autoreplySelect3" type="radio" name="autoreplySelect">
+                          <label class="autoreply__item--label autoreply__item--label-eng" for="autoreplySelect3"> <span>английский</span></label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="autoreply__right"> 
+                    <textarea>Тут будет стандартный текст для ответа на время отпуска. Писмо формируется автоматичевки: текст письма стандартный, данный сотрудника подтягиваются из базы данных (имя фамилия, телефон, email и тд</textarea>
+                  </div>
+                </div>
+                <div class="autoreply__footer"> 
+                  <div class="autoreply__empty"> </div>
+                  <div class="autoreply__btns"> 
+                    <div class="autoreply__btn autoreply__btn-create">создать</div>
+                    <div class="autoreply__btn autoreply__btn-copy">скопировать</div>
+                  </div>
+                  <div class="autoreply__reset"> <img src="img/svg/autoreply/shape.svg" alt="alt"><span>сбросить</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="footer__container"> 
+          <div class="footer__left"> <span>© Иванян и партнеры 2022  / Корпоративный портал бюро</span></div>
+          <div class="footer__right"> <span>Москва: </span><a href="tel: 4956470046">+7 495 647 0046  </a><a href="mailto: reception.mos@iplf.ru">reception.mos@iplf.ru  </a><span>Санкт-Петербург: </span><a href="tel: 8126470046">+7 812 647 0046 </a><a href="mailto: reception.spb@iplf.ru">reception.spb@iplf.ru</a></div>
+        </div>
+      </footer>
+    </div>
+    <script></script>
+    <div style="display:none;">
+      <div class="fancy-modal-map" id="fancy-modal-map">
+        <div class="map-container">
+          <div id="mapplic"></div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/js/datepicker.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@easepick/bundle@1.2.0/dist/index.umd.min.js"></script>
+    <script src="jslibs/jquery.mousewheel.js"></script>
+    <script src="jslibs/magnific-popup.js"></script>
+    <script src="jslibs/mapplic.js"></script>
+    <!--import "./import/libs/csvparser.js"; - опционален для карты-->
+    <script src="js/main.js"></script>
+  </body>
+</html>

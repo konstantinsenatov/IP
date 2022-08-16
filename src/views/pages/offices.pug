@@ -1,0 +1,73 @@
+extends ../layouts/default
+
+block variables
+	- const title = "IP";
+
+block content
+	.wrapper
+		include ../../blocks/modules/header/header
+
+		include ../../blocks/modules/sidebar-icons/sidebar-icons
+		.page
+			include ../../blocks/modules/menu/menu
+			.content
+				.content__container
+					.offices
+						.offices__title.general-title Офисы бюро
+						.offices__btns
+							a(href="/offices-maps.html").offices__btn.offices__btn-map 
+								span карта офиса Москва
+								.offices__btn--arrow
+							a(href="").offices__btn.offices__btn-map 
+								span карта офиса Санкт-Петербург
+								.offices__btn--arrow
+							a(href="").offices__btn.offices__btn-calendar 
+								span календарь бронирований
+						.offices__info
+							.offices__info--item.offices__info--mosk
+								span.offices__info--city Москва
+								span Т 
+								a(href="").offices__info--border
+									span +7 495 647 0046
+								br
+								span E 
+								a(href="").offices__info--border
+									span reception.mos@iplf.ru
+								br
+								span Кадашевская наб., 14, корп. 3,
+									br
+									|Москва, 119017, Россия
+								p Вход со стороны 1-го Кадашевского переулка, напротив школы. Крыльцо с табличкой: Адвокатское бюро «Иванян и партнеры».
+								p Если вам нужна помощь, чтобы сориентироваться, позвоните нам:
+									span +7 495 647 0046
+								a(href="").offices__info--find.offices__info--border 
+									span Найти на YandexMaps
+
+							.offices__info--item.offices__info--pit
+								span.offices__info--city Санкт-Петербург
+								span Т 
+								a(href="").offices__info--border
+									span +7 812 647 0046
+								br
+								span E 
+								a(href="").offices__info--border
+									span reception.spb@iplf.ru
+								br
+								span Конногвардейский бул., д. 5, оф. 101,
+									br
+									|Санкт-Петербург, 190098, Россия
+								p Дом Монферран, вход с бульвара. На домофоне наберите, пожалуйста, «101», мы вам откроем. Дальше – по лестнице направо в дверь с табличкой «101».
+								p Если вам нужна помощь, чтобы сориентироваться, позвоните нам:
+									span +7 812 647 0046
+								a(href="").offices__info--find.offices__info--border 
+									span Найти на YandexMaps
+
+
+
+
+
+
+
+
+
+		include ../../blocks/modules/footer/footer

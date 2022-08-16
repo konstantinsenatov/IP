@@ -1,0 +1,62 @@
+.text-block {
+	h1 {
+		margin-bottom: 63px;
+		font-family: 'Source Serif Pro';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 32px;
+		line-height: 40px;
+		color: #000000;
+
+	}
+
+	h2,
+	p,
+	li {
+		font-family: 'Styrene A LC Web';
+		font-style: normal;
+		font-size: 18px;
+		line-height: 26px;
+		color: #000000;
+
+	}
+
+	h2 {
+		margin-top: 26px;
+		font-weight: 700;
+
+	}
+
+	p {
+		margin-top: 26px;
+		margin-bottom: 0;
+		font-weight: 400;
+
+	}
+
+	ul {
+		margin-top: 27px;
+
+		li {
+			padding-left: 30px;
+			font-weight: 400;
+
+			&:not(:first-child) {
+				margin-top: 18px;
+
+			}
+			position: relative;
+			&::before{
+				content:'';
+				position: absolute;
+				top: 10px;
+				left: 10px;
+				width: 7px;
+				height: 7px;
+				border-radius: 50%;
+				background-color: #000000;
+
+			}
+		}
+	}
+}

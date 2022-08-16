@@ -1,0 +1,53 @@
+extends ../layouts/default
+
+block variables
+	- const title = "IP";
+
+block content
+	.wrapper
+		include ../../blocks/modules/header/header
+
+		include ../../blocks/modules/sidebar-icons/sidebar-icons
+		.page
+			include ../../blocks/modules/menu/menu
+			.content
+				.content__container
+					.signature
+						.signature__container
+							.signature__title.general-title Создать подпись в письмо
+							.signature__text.general-text 
+								|Короткая инструкция будет тут.  Подпись формируется автоматичевки: текст подписи стандартный, данные сотрудника подтягиваются из базы данных (имя фамилия, телефон, email и тд)  При загрузке страницы подгружается полная версия подписи на русском языке. Кнопка 
+								span скопировать 
+								|всегда в активном состоянии. При выборе иного варианта подпись генерится автоматически.
+								br
+								|Ссылка на подробную инструкцию со скринами (в раздел IT??)
+							.signature__body 
+								.signature__left 
+									.signature__left--radio 
+										form.block-form(action='#')
+											.block-form__title Вариант подписи
+											.block-form__input
+												.radiobuttons
+													.radiobuttons__item
+														| полная русская
+														input(type='radio' value='1' checked='' name='nameradio')
+													.radiobuttons__item
+														| короткая русская
+														input(type='radio' value='2' name='nameradio')
+													.radiobuttons__item
+														| полная английская
+														input(type='radio' value='3' name='nameradio')
+													.radiobuttons__item
+														| короткая английская
+														input(type='radio' value='4' name='nameradio')
+									button.signature__left--btn 
+										span скопировать
+									.signature__left--text 
+										span  Важная мысль будет тут. 
+										|Редактировать можно строчку с мобильным телефоном и тд....
+								.signature__right
+
+
+
+
+		include ../../blocks/modules/footer/footer

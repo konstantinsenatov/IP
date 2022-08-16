@@ -1,0 +1,198 @@
+extends ../layouts/default
+
+block variables
+	- const title = "IP";
+
+block content
+	.wrapper
+		include ../../blocks/modules/header/header
+
+		include ../../blocks/modules/sidebar-icons/sidebar-icons
+		.page
+			include ../../blocks/modules/menu/menu
+			.content
+				.content__container
+					.people
+						.people__title.general-title Сотрудники бюро
+						.people__header
+							.people__header--search.search
+								.people__header--icon.search--icon
+									img(src="img/svg/search-orange.svg", alt="alt")
+								.people__header--input.search--input
+									input(type="text" placeholder='Найти сотрудника')
+
+							.-select-.people__header--select.select1
+								.select1--title
+									span все практики / отделы
+								.select1--content
+									input#singleSelect1.select1--input(type='radio' name='singleSelect1')
+									label.select1--label(for='singleSelect1')
+									input#singleSelect2.select1--input(type='radio' name='singleSelect1' checked='')
+									label.select1--label(for='singleSelect2') все практики / отделы
+									.select1--content__wrapper
+										.select1--content__left
+											.select1--content__title практики
+											input#singleSelect3.select1--input(type='radio' name='singleSelect1')
+											label.select1--label.select1--label-left(for='singleSelect3') антимонопольное регулирование
+											input#singleSelect3.select1--input(type='radio' name='singleSelect1')
+											label.select1--label.select1--label-left(for='singleSelect3') банковское и финансовое право
+											input#singleSelect3.select1--input(type='radio' name='singleSelect1')
+											label.select1--label.select1--label-left(for='singleSelect3') взаимодействие с органами власти
+											input#singleSelect3.select1--input(type='radio' name='singleSelect1')
+											label.select1--label.select1--label-left(for='singleSelect3') регулирование и комплаенс
+											input#singleSelect3.select1--input(type='radio' name='singleSelect1')
+											label.select1--label.select1--label-left(for='singleSelect3') корпоративное право / M&A
+											input#singleSelect3.select1--input(type='radio' name='singleSelect1')
+											label.select1--label.select1--label-left(for='singleSelect3') международные споры
+											input#singleSelect3.select1--input(type='radio' name='singleSelect1')
+											label.select1--label.select1--label-left(for='singleSelect3') налоги
+											input#singleSelect3.select1--input(type='radio' name='singleSelect1')
+											label.select1--label.select1--label-left(for='singleSelect3') недвижимость и инвестиции
+											input#singleSelect3.select1--input(type='radio' name='singleSelect1')
+											label.select1--label.select1--label-left(for='singleSelect3') разрешение споров в россии
+											input#singleSelect3.select1--input(type='radio' name='singleSelect1')
+											label.select1--label.select1--label-left(for='singleSelect3') private clients
+											input#singleSelect3.select1--input(type='radio' name='singleSelect1')
+											label.select1--label.select1--label-left(for='singleSelect3') энергетика / природные ресурсы
+											input#singleSelect3.select1--input(type='radio' name='singleSelect1')
+											label.select1--label.select1--label-left(for='singleSelect3') коммерческие контракты
+
+										.select1--content__right
+											.select1--content__title отделы
+											input#singleSelect3.select1--input(type='radio' name='singleSelect1')
+											label.select1--label.select1--label-right(for='singleSelect3') биллинг
+											input#singleSelect3.select1--input(type='radio' name='singleSelect1')
+											label.select1--label.select1--label-right(for='singleSelect3') кадры
+											input#singleSelect3.select1--input(type='radio' name='singleSelect1')
+											label.select1--label.select1--label-right(for='singleSelect3') финансы
+											input#singleSelect3.select1--input(type='radio' name='singleSelect1')
+											label.select1--label.select1--label-right(for='singleSelect3') IT
+											input#singleSelect3.select1--input(type='radio' name='singleSelect1')
+											label.select1--label.select1--label-right(for='singleSelect3') маркетинг
+											input#singleSelect3.select1--input(type='radio' name='singleSelect1')
+											label.select1--label.select1--label-right(for='singleSelect3') водители / курьеры
+
+							.-select-.people__header--select.select2
+								.select2--title
+									span все офисы
+								.select2--content
+									input#singleselect11.select2--input(type='radio' name='singleselect2')
+									label.select2--label(for='singleselect11')
+									input#singleSelect212.select2--input(type='radio' name='singleselect2' checked='')
+									label.select2--label(for='singleSelect212') все офисы
+									input#singleSelect22.select2--input(type='radio' name='singleselect2')
+									label.select2--label(for='singleSelect22') Москва
+									input#singleSelect33.select2--input(type='radio' name='singleselect2')
+									label.select2--label(for='singleSelect33') Санкт-Петербург
+
+							.people__header--btns
+								a(href="people-lists.html").people__header--btn.people__header--btn1.active
+									svg(width='26' height='24' viewBox='0 0 26 24' fill='none' xmlns='http://www.w3.org/2000/svg')
+										path(d='M0 1H26M0 12H26M0 23H26' stroke='black' stroke-width='2')
+								a(href="people-cards.html").people__header--btn.people__header--btn2
+									svg(width='26' height='26' viewBox='0 0 26 26' fill='none' xmlns='http://www.w3.org/2000/svg')
+										path(d='M1 1H10V10H1V1ZM1 16H10V25H1V16ZM16 1H25V10H16V1ZM16 16H25V25H16V16Z' stroke='#CFEDFF' stroke-width='2')
+
+					.people__lists
+						table
+							tbody
+								tr
+									th сотрудник
+									th практика / отдел
+									th внут. тел.
+									th рабочий тел.
+									th e-mail
+									th № каб.
+
+								tr
+									td
+										a(href="#") 
+											span Василий Торкановский
+									td международные споры
+									td
+										a(href="#") 
+											span 0034
+									td
+										a(href="#") 
+											span +7 495 647 0046
+									td
+										a(href="#") 
+											span v.torkanovskiy@iplf.ru
+									td
+										a(href="#fancy-modal-map" data-fancy-map) 
+											span 208
+
+								tr
+									td
+										a(href="people-person.html") 
+											span Юлия Чекмарева
+									td private clients
+									td
+										a(href="#") 
+											span 0023
+									td
+										a(href="#") 
+											span +7 495 647 0046
+									td
+										a(href="#") 
+											span y.chekmareva@iplf.ru
+									td
+										a(href="#fancy-modal-map" data-fancy-map) 
+											span 208
+
+								tr
+									td
+										a(href="#") 
+											span Наталия Малямина
+									td управляющий партнер
+									td
+										a(href="#") 
+											span 0034
+									td
+										a(href="#") 
+											span +7 495 647 0046
+									td
+										a(href="#") 
+											span n.malyamina@iplf.ru
+									td
+										a(href="#fancy-modal-map" data-fancy-map) 
+											span 208
+
+								tr
+									td
+										a(href="#") 
+											span Андрей Горленко
+									td международные споры
+									td
+										a(href="#") 
+											span 0034
+									td
+										a(href="#") 
+											span +7 495 647 0046
+									td
+										a(href="#") 
+											span a.gorlenko@iplf.ru
+									td
+										a(href="#fancy-modal-map" data-fancy-map) 
+											span 208
+
+								tr
+									td
+										a(href="#") 
+											span Максим Распутин
+									td партнер
+									td
+										a(href="#") 
+											span 0016
+									td
+										a(href="#") 
+											span +7 495 647 0046
+									td
+										a(href="#") 
+											span m.rasputin@iplf.ru
+									td
+										a(href="#fancy-modal-map" data-fancy-map) 
+											span 208
+
+
+		include ../../blocks/modules/footer/footer

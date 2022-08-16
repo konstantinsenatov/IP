@@ -1,0 +1,27 @@
+.footer {
+	position: relative;
+	z-index: 101;
+	background: #000000;	
+	padding: 40px 95px 24px;
+
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		span, a {
+			font-family: 'Styrene A LC Web';
+			font-style: normal;
+			font-weight: 400;
+			font-size: 12px;
+			line-height: 15px;
+			color: #E1E6EB;
+
+		}
+	}
+		&__left {
+
+		}
+		&__right {
+
+		}
+}

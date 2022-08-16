@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>New Page</title>
+    <meta name="theme-color" content="#fff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/css/datepicker.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  </head>
+  <body>
+    <header class="header"> 
+      <div class="header__container"> 
+        <div class="header__search"> 
+          <div class="header__search--icon"> <img src="img/svg/search.svg" alt="alt"></div>
+          <div class="header__search--input"> 
+            <input type="text" placeholder="Поиск по сайту">
+          </div>
+        </div>
+        <button class="header__man"> <span>NameS</span><img src="img/svg/man.svg" alt="alt"></button>
+        <div class="header__login login-header"> 
+          <ul class="login-header__list"> 
+            <li class="login-header__item"> <a class="login-header__link" href="">изменить аватарку</a></li>
+            <li class="login-header__item"> <a class="login-header__link" href="">сменить пользователя</a></li>
+            <li class="login-header__item"> <a class="login-header__link" href="">выйти</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <footer class="footer">
+      <div class="footer__container"> 
+        <div class="footer__left"> <span>© Иванян и партнеры 2022  / Корпоративный портал бюро</span></div>
+        <div class="footer__right"> <span>Москва: </span><a href="tel: 4956470046">+7 495 647 0046  </a><a href="mailto: reception.mos@iplf.ru">reception.mos@iplf.ru  </a><span>Санкт-Петербург: </span><a href="tel: 8126470046">+7 812 647 0046 </a><a href="mailto: reception.spb@iplf.ru">reception.spb@iplf.ru</a></div>
+      </div>
+    </footer>
+    <div style="display:none;">
+      <div class="fancy-modal-map" id="fancy-modal-map">
+        <div class="map-container">
+          <div id="mapplic"></div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/js/datepicker.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@easepick/bundle@1.2.0/dist/index.umd.min.js"></script>
+    <script src="jslibs/jquery.mousewheel.js"></script>
+    <script src="jslibs/magnific-popup.js"></script>
+    <script src="jslibs/mapplic.js"></script>
+    <!--import "./import/libs/csvparser.js"; - опционален для карты-->
+    <script src="js/main.js"></script>
+    <script src="js/vendor.js"></script>
+  </body>
+</html>

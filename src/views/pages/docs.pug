@@ -1,0 +1,66 @@
+extends ../layouts/default
+
+block variables
+	- const title = "IP";
+
+block content
+	.wrapper
+		include ../../blocks/modules/header/header
+
+		include ../../blocks/modules/sidebar-icons/sidebar-icons
+		.page
+			include ../../blocks/modules/menu/menu
+			.content
+				.content__container
+					.docs
+						.docs__title.general-title Документы бюро
+						.docs__search.search 
+							.docs__icon.search--icon 
+								img(src="img/svg/search-orange.svg", alt="alt")
+							.docs__input.search--input 
+								input(type="text" placeholder='Найти сотрудника')
+						p.docs__text 
+							|В рамках спецификации современных стандартов, диаграммы связей разоблачены. Идейные соображения высшего порядка, а также глубокий уровень погружения способствует повышению качества как самодостаточных, так и внешне зависимых концептуальных решений. Идейные соображения высшего порядка, а также глубокий уровень погружения способствует повышению качества как самодостаточных, так и внешне зависимых концептуальных решений. 
+						.docs__subtitle формы заявок на оформление
+						ul.docs__list 
+							li.docs__item 
+								a.docs__link(href="") 
+									span Форма заявки на оформление какой-нибудь классной штуки
+							li.docs__item 
+								a.docs__link(href="") 
+									span Еще какае-то форма заявки
+							li.docs__item 
+								a.docs__link(href="") 
+									span Но некоторые особенности внутренней политики лишь добавляют
+							li.docs__item 
+								a.docs__link(href="") 
+									span Противоположная точка зрения подразумевает
+							li.docs__item 
+								a.docs__link(href="") 
+									span Перспективное планирование играет важную роль в формировании
+							li.docs__item 
+								a.docs__link(href="") 
+									span Современные технологии достигли такого уровня
+						.docs__subtitle название следующего раздела
+						ul.docs__list 
+							li.docs__item 
+								a.docs__link(href="") 
+									span Противоположная точка зрения подразумевает
+							li.docs__item 
+								a.docs__link(href="") 
+									span Еще какае-то форма заявки
+							li.docs__item 
+								a.docs__link(href="")
+									span  Но некоторые особенности внутренней политики лишь противоположная точка зрения подразумевает
+							li.docs__item 
+								a.docs__link(href="") 
+									span Противоположная точка зрения подразумевает заявка на оформление
+							li.docs__item 
+								a.docs__link(href="") 
+									span Форма заявки на оформление какой-нибудь классной штуки
+							li.docs__item 
+								a.docs__link(href="") 
+									span Современные технологии достигли такого уровня зрения подразумевает
+
+
+		include ../../blocks/modules/footer/footer

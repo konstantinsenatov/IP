@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>IP</title>
+    <meta name="theme-color" content="#fff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/css/datepicker.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header"> 
+        <div class="header__container"> 
+          <div class="header__search"> 
+            <div class="header__search--icon"> <img src="img/svg/search.svg" alt="alt"></div>
+            <div class="header__search--input"> 
+              <input type="text" placeholder="Поиск по сайту">
+            </div>
+          </div>
+          <button class="header__man"> <span>NameS</span><img src="img/svg/man.svg" alt="alt"></button>
+          <div class="header__login login-header"> 
+            <ul class="login-header__list"> 
+              <li class="login-header__item"> <a class="login-header__link" href="">изменить аватарку</a></li>
+              <li class="login-header__item"> <a class="login-header__link" href="">сменить пользователя</a></li>
+              <li class="login-header__item"> <a class="login-header__link" href="">выйти</a></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="sidebar">
+        <div class="sidebar__container"> 
+          <div class="sidebar__calendar-wrapper"> <a class="sidebar__calendar" href=""><span class="sidebar__title">календарь бронирований</span>
+              <div class="sidebar__calendar-img"><img src="img/svg/calendar.svg" alt="alt"></div></a></div>
+          <div class="sidebar__tel"> <span class="sidebar__title">телефон</span><a class="sidebar__tel--link sidebar__link" href=""><span>соединить с сотрудником бюро</span>
+              <div class="sidebar__link-icon"><img src="img/svg/1.svg" alt="alt"></div></a><a class="sidebar__tel--link sidebar__link" href=""><span>заказать конференц звонок</span>
+              <div class="sidebar__link-icon"><img src="img/svg/2.svg" alt="alt"></div></a></div>
+          <div class="sidebar__email"> <span class="sidebar__title">электронная почта</span><a class="sidebar__email--link sidebar__link" href=""><span>автоответ на время отпуска</span>
+              <div class="sidebar__link-icon"><img src="img/svg/3.svg" alt="alt"></div></a><a class="sidebar__email--link sidebar__link" href=""><span>создать подпись в письмо</span>
+              <div class="sidebar__link-icon"><img src="img/svg/4.svg" alt="alt"></div></a></div>
+          <div class="sidebar__maps"> <span class="sidebar__title">КАРТЫ</span><a class="sidebar__maps--link sidebar__link" href=""><span>ПОСМОТРЕТЬ НА ПЛАНЕ ОФИСА</span>
+              <div class="sidebar__link-icon"><img src="img/svg/5.svg" alt="alt"></div></a></div>
+        </div>
+      </div>
+      <div class="page">
+        <div class="menu">
+          <div class="menu__wrapper">
+            <div class="menu__container"> <a class="menu__logo" href=""> <img src="img/svg/logo.svg" alt="alt"><span>корпоративный портал бюро</span></a>
+              <ul class="menu__list"> 
+                <li class="menu__item"> 
+                  <div class="menu__item--click bureau-item">Бюро</div>
+                  <ul class="submenu__list"> 
+                    <li class="submenu__item"><a class="submenu__link philosophi-link" href="philosophi.html">философия</a></li>
+                    <li class="submenu__item"><a class="submenu__link" href="#">история</a></li>
+                    <li class="submenu__item"><a class="submenu__link" href="#">орг. структура</a></li>
+                    <li class="submenu__item"><a class="submenu__link offices-link" href="offices.html">офисы</a></li>
+                  </ul>
+                </li>
+                <li class="menu__item"> <a class="menu__item--click people-link" href="people-cards.html">Люди</a></li>
+                <li class="menu__item"> <a class="menu__item--click docs-link" href="docs.html">Документы</a></li>
+                <li class="menu__item"> 
+                  <div class="menu__item--click">биллинг</div>
+                  <ul class="submenu__list"> 
+                    <li class="submenu__item"><a class="submenu__link" href="#">философия</a></li>
+                    <li class="submenu__item"><a class="submenu__link" href="#">история</a></li>
+                    <li class="submenu__item"><a class="submenu__link" href="#">орг. структура</a></li>
+                    <li class="submenu__item"><a class="submenu__link" href="#">офисы</a></li>
+                  </ul>
+                </li>
+                <li class="menu__item"> 
+                  <div class="menu__item--click">финансы</div>
+                  <ul class="submenu__list"> 
+                    <li class="submenu__item"><a class="submenu__link" href="#">философия</a></li>
+                    <li class="submenu__item"><a class="submenu__link" href="#">история</a></li>
+                    <li class="submenu__item"><a class="submenu__link" href="#">орг. структура</a></li>
+                    <li class="submenu__item"><a class="submenu__link" href="#">офисы</a></li>
+                  </ul>
+                </li>
+                <li class="menu__item"> 
+                  <div class="menu__item--click">Маркетинг</div>
+                  <ul class="submenu__list"> 
+                    <li class="submenu__item"><a class="submenu__link" href="#">позиционирование</a></li>
+                    <li class="submenu__item"><a class="submenu__link" href="#">шаблоны</a></li>
+                    <li class="submenu__item"><a class="submenu__link" href="#">брендбук</a></li>
+                    <li class="submenu__item"><a class="submenu__link" href="#">актуальные опросы</a></li>
+                    <li class="submenu__item"><a class="submenu__link" href="#">результаты опросов</a></li>
+                  </ul>
+                </li>
+                <li class="menu__item"> 
+                  <div class="menu__item--click menu__item--click-uppercase">HR</div>
+                  <ul class="submenu__list"> 
+                    <li class="submenu__item"><a class="submenu__link" href="#">дмс</a></li>
+                    <li class="submenu__item"><a class="submenu__link" href="#">дресс-код</a></li>
+                    <li class="submenu__item"><a class="submenu__link" href="#">корпоративная связь</a></li>
+                    <li class="submenu__item"><a class="submenu__link" href="#">адвокатский статус</a></li>
+                    <li class="submenu__item"><a class="submenu__link" href="#">больничный</a></li>
+                    <li class="submenu__item"><a class="submenu__link" href="#">командировки</a></li>
+                    <li class="submenu__item"><a class="submenu__link" href="#">увольнение</a></li>
+                    <li class="submenu__item"><a class="submenu__link" href="#">справочник нового сотрудника</a></li>
+                  </ul>
+                </li>
+                <li class="menu__item"> 
+                  <div class="menu__item--click menu__item--click-uppercase">IT</div>
+                  <ul class="submenu__list"> 
+                    <li class="submenu__item"><a class="submenu__link" href="#">FAQ</a></li>
+                    <li class="submenu__item"><a class="submenu__link" href="#">полезные советы</a></li>
+                    <li class="submenu__item"><a class="submenu__link" href="#">WI-Fi</a></li>
+                    <li class="submenu__item"><a class="submenu__link" href="#">Maconomy</a></li>
+                    <li class="submenu__item"><a class="submenu__link" href="#">офисные телефоны</a></li>
+                    <li class="submenu__item"><a class="submenu__link" href="#">почта Outlook</a></li>
+                    <li class="submenu__item"><a class="submenu__link" href="#">Word</a></li>
+                    <li class="submenu__item"><a class="submenu__link" href="#">Excel</a></li>
+                    <li class="submenu__item"><a class="submenu__link" href="#">Acrobat Pro</a></li>
+                    <li class="submenu__item"><a class="submenu__link" href="#">Rocket Chat</a></li>
+                    <li class="submenu__item"><a class="submenu__link" href="#">Видеоконференции</a></li>
+                    <li class="submenu__item"><a class="submenu__link" href="#">Brya Mobile</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="main">
+          <div class="main__container"> 
+            <div class="main__news"> 
+              <div class="main__title">актуальное</div><a class="main__link" href="#">
+                <figure>
+                  <h2 class="main__subtitle">заголовок новости  </h2>
+                  <p class="main__text">Текст сообщения. Рыба-текст. В особенности же новая модель организационной деятельности обеспечивает актуальность системы обучения кадров, насущным потребностям. Прежде всего, укрепление и развитие внутренней структуры способствует подготовке и реализации прогресса профессионального сообщества.</p>
+                </figure></a><a href="#">
+                <figure>
+                  <h2 class="main__subtitle">название опроса / сроки опроса в заголовке  </h2>
+                  <p class="main__text">Текст сообщения. Рыба-текст. В особенности же новая модель организационной деятельности обеспечивает актуальность системы обучения кадров, насущным потребностям. Прежде всего, укрепление и развитие внутренней структуры способствует подготовке и реализации прогресса профессионального. Пройти опрос</p>
+                </figure></a>
+            </div>
+            <div class="main__massages"> 
+              <div class="main__title">лента</div><a class="main__link" href="#">
+                <figure>
+                  <div class="main__date"> <span>24.05.2022</span><span>11:35</span></div>
+                  <p class="main__text">Текст сообщения. Рыба-текст. В особенности же новая модель организационной деятельности обеспечивает актуальность системы обучения кадров, насущным потребностям. Прежде всего, укрепление и развитие внутренней структуры способствует подготовке и реализации прогресса профессионального сообщества.</p>
+                </figure></a><a class="main__link" href="#">
+                <figure>
+                  <div class="main__date"> <span>24.05.2022</span><span>12:23</span></div>
+                  <p class="main__text">Текст сообщения. Рыба-текст. В особенности же новая модель организационной деятельности обеспечивает актуальность системы обучения кадров, насущным потребностям. Прежде всего, укрепление и развитие внутренней структуры способствует подготовке и реализации прогресса профессионального сообщества.</p>
+                </figure></a><a class="main__link" href="#">
+                <figure>
+                  <div class="main__date"> <span>24.05.2022</span><span>17:32</span></div>
+                  <p class="main__text">Текст сообщения. Рыба-текст. В особенности же новая модель организационной деятельности обеспечивает актуальность системы обучения кадров, насущным потребностям. Прежде всего, укрепление и развитие внутренней структуры способствует подготовке и реализации прогресса профессионального сообщества.</p>
+                </figure></a><a class="main__link" href="#">
+                <figure>
+                  <div class="main__date"> <span>24.05.2022</span><span>16:48</span></div>
+                  <p class="main__text">Текст сообщения. Рыба-текст. В особенности же новая модель организационной деятельности обеспечивает актуальность системы обучения кадров, насущным потребностям. Прежде всего, укрепление и развитие внутренней структуры способствует подготовке и реализации прогресса профессионального сообщества.</p>
+                </figure></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="footer__container"> 
+          <div class="footer__left"> <span>© Иванян и партнеры 2022  / Корпоративный портал бюро</span></div>
+          <div class="footer__right"> <span>Москва: </span><a href="tel: 4956470046">+7 495 647 0046  </a><a href="mailto: reception.mos@iplf.ru">reception.mos@iplf.ru  </a><span>Санкт-Петербург: </span><a href="tel: 8126470046">+7 812 647 0046 </a><a href="mailto: reception.spb@iplf.ru">reception.spb@iplf.ru</a></div>
+        </div>
+      </footer>
+    </div>
+    <div style="display:none;">
+      <div class="fancy-modal-map" id="fancy-modal-map">
+        <div class="map-container">
+          <div id="mapplic"></div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/js/datepicker.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@easepick/bundle@1.2.0/dist/index.umd.min.js"></script>
+    <script src="jslibs/jquery.mousewheel.js"></script>
+    <script src="jslibs/magnific-popup.js"></script>
+    <script src="jslibs/mapplic.js"></script>
+    <!--import "./import/libs/csvparser.js"; - опционален для карты-->
+    <script src="js/main.js"></script>
+  </body>
+</html>
