@@ -9,7 +9,6 @@ Internal pages:
   - https://konstantinsenatov.github.io/IP/dist/offices-calendar.html
   - https://konstantinsenatov.github.io/IP/dist/offices-maps.html
   - https://konstantinsenatov.github.io/IP/dist/offices.html
-  - https://konstantinsenatov.github.io/IP/dist/page.html
   - https://konstantinsenatov.github.io/IP/dist/people-cards.html
   - https://konstantinsenatov.github.io/IP/dist/people-lists.html
   - https://konstantinsenatov.github.io/IP/dist/people-person.html
